@@ -1,0 +1,94 @@
+/* Контейнер */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Скрыть изображения по умолчанию */
+.mySlides {
+  display: none;
+}
+
+/* Кнопки следующий и предыдущий */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Расположение кнопки next */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении добавьте черный цвет фона с небольшой прозрачностью. */
+.prev:hover, .next:hover {
+  background-color: rgba(165, 15, 15, 0.8);
+}
+
+/* Текст заголовка */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-family: Calluna;
+  text-shadow: 1px 1px 1px #000;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Числовой текст */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Точки / маркеры / индикаторы */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Анимация затухания */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
